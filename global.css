@@ -1,0 +1,30 @@
+body {
+    margin: 0;
+    line-height: normal;
+  }
+  
+  :root {
+    /* fonts */
+    --font-inter: Inter;
+    --font-candal: Candal;
+    --font-sf-pro-text: "SF Pro Text";
+  
+    /* font sizes */
+    --font-size-mini: 15px;
+    --font-size-xl: 20px;
+    --font-size-mid: 17px;
+  
+    /* Colors */
+    --color-black: #000;
+    --color-white: #fff;
+    --color-gray-100: rgba(255, 255, 255, 0.86);
+  
+    /* Gaps */
+    --gap-6xs: 7px;
+  
+    /* border radiuses */
+    --br-mini: 15px;
+    --br-11xs: 2px;
+    --br-9xs: 4px;
+  }
+  
