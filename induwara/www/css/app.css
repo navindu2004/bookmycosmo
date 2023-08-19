@@ -5,12 +5,6 @@
     font-weight: bolder;
 }
 
-button button-fill{
-    background-color: rgb(1, 9, 56);
-    color: white;
-    font-weight: bolder;
-}
-
 .grid-cols-2{
     grid-template-columns: repeat(3,minmax(0,1fr));
 }
@@ -36,8 +30,9 @@ button button-fill{
     font-size: var(--fs-size);
     font-family: "Arial";
     position: relative;
+    text-align: center;
     text-transform: uppercase;
-    color: transparent;
+    color: var(--text-stroke-color);
     -webkit-text-stroke: 1px var(--text-stroke-color);
   }
   /* this is the text, when you hover on button */
@@ -57,4 +52,37 @@ button button-fill{
   .button1:hover .hover-text {
     width: 100%;
     filter: drop-shadow(0 0 23px var(--animation-color))
+  }
+
+
+  #btn23 {
+    display: flex;
+    justify-content: center;
+    padding: 10px 20px;
+    margin: 10px 10px;
+    text-transform: uppercase;
+    border-radius: 8px;
+    font-size: 17px;
+    font-weight: 500;
+    color: #00008B;
+    text-shadow: none;
+    background: transparent;
+    box-shadow: transparent;
+    border: 1px solid #00008B;
+    transition: 0.5s ease;
+    user-select: none;
+  }
+  
+  #btn23:hover,:focus {
+    color: #ffffff;
+    border: 1px solid #00008B;
+    background: #5D41DE;
+    border: 1px solid #00008B;
+    text-shadow: 0 0 2px #5D41DE,
+                0 0 3px #5D41DE,
+                0 0 8px #5D41DE;
+    box-shadow: 0 0 2px #5D41DE,
+                0 0 5px #5D41DE,
+                0 0 10px #5D41DE,
+                0 0 12px #5D41DE;
   }
