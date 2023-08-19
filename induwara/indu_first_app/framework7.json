@@ -1,0 +1,17 @@
+{
+  "cwd": "C:\\Users\\Pc\\Desktop\\RootCode-The Backbenchers\\bookmycosmo_TheBackbenchers_2.0\\induwara\\indu_first_app",
+  "type": [
+    "web"
+  ],
+  "name": "induCosmos1",
+  "framework": "core",
+  "template": "tabs",
+  "bundler": false,
+  "theming": {
+    "customColor": true,
+    "color": "#5D41DE",
+    "darkMode": false,
+    "iconFonts": true
+  },
+  "customBuild": false
+}
