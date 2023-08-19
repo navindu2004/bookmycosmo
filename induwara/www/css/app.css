@@ -5,12 +5,84 @@
     font-weight: bolder;
 }
 
-button button-fill{
-    background-color: rgb(2, 215, 30);
-    color: white;
-    font-weight: bolder;
-}
-
 .grid-cols-2{
     grid-template-columns: repeat(3,minmax(0,1fr));
 }
+
+
+/* === removing default button style ===*/
+.button1 {
+    margin: 0;
+    height: auto;
+    background: transparent;
+    padding: 0;
+    border: none;
+  }
+  
+  /* button styling */
+  .button1 {
+    --border-right: 6px;
+    --text-stroke-color: rgba(15, 28, 198, 0.837);
+    --animation-color: #070035;
+    --fs-size: 2em;
+    letter-spacing: 3px;
+    text-decoration: none;
+    font-size: var(--fs-size);
+    font-family: "Arial";
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--text-stroke-color);
+    -webkit-text-stroke: 1px var(--text-stroke-color);
+  }
+  /* this is the text, when you hover on button */
+  .hover-text {
+    position: absolute;
+    box-sizing: border-box;
+    content: attr(data-text);
+    color: var(--animation-color);
+    width: 0%;
+    inset: 0;
+    border-right: var(--border-right) solid var(--animation-color);
+    overflow: hidden;
+    transition: 0.5s;
+    -webkit-text-stroke: 1px var(--animation-color);
+  }
+  /* hover */
+  .button1:hover .hover-text {
+    width: 100%;
+    filter: drop-shadow(0 0 23px var(--animation-color))
+  }
+
+
+  #btn23 {
+    display: flex;
+    justify-content: center;
+    padding: 10px 20px;
+    margin: 10px 10px;
+    text-transform: uppercase;
+    border-radius: 8px;
+    font-size: 17px;
+    font-weight: 500;
+    color: #00008B;
+    text-shadow: none;
+    background: transparent;
+    box-shadow: transparent;
+    border: 1px solid #00008B;
+    transition: 0.5s ease;
+    user-select: none;
+  }
+  
+  #btn23:hover,:focus {
+    color: #ffffff;
+    border: 1px solid #00008B;
+    background: #5D41DE;
+    border: 1px solid #00008B;
+    text-shadow: 0 0 2px #5D41DE,
+                0 0 3px #5D41DE,
+                0 0 8px #5D41DE;
+    box-shadow: 0 0 2px #5D41DE,
+                0 0 5px #5D41DE,
+                0 0 10px #5D41DE,
+                0 0 12px #5D41DE;
+  }
