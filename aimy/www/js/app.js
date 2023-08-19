@@ -26,3 +26,16 @@ $('#my-login-screen .login-button').on('click', function () {
   // Alert username and password
   app.dialog.alert('Username: ' + username + '<br/>Password: ' + password);
 });
+
+// Signup Screen Demo
+$('#my-signup-screen .login-button').on('click', function () {
+  var username = $('#my-login-screen [name="username"]').val();
+  var password = $('#my-login-screen [name="password"]').val();
+
+  // Close login screen
+  app.loginScreen.close('#my-signup-screen');
+
+  // Alert username and password
+  app.dialog.alert('Username: ' + username + '<br/>Password: ' + password);
+});
+
