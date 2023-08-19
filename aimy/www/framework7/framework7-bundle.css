@@ -21,6 +21,10 @@
   --f7-safe-area-outer-left: 0px;
   --f7-safe-area-outer-right: 0px;
   --f7-device-pixel-ratio: 1;
+
+  --main-theme-bg-color: #5e41de33;
+  --main-theme-font-color: #5D41DE;
+  --main-theme-black: rgba(24, 20, 20, 0.987);
 }
 @supports (left: env(safe-area-inset-left)) {
   :root {
@@ -5933,15 +5937,21 @@ html.with-modal-popup-push-closing .framework7-root > .view.dark:after {
 .login-screen-content,
 .login-screen-page,
 .login-screen .page {
-  background: var(--f7-login-screen-content-bg-color);
+  background: var(--main-theme-bg-color);
 }
+
+.login-screen-content{
+  /* background: var(--main-theme-bg-color); */
+  background: var(--main-theme-black);
+}
+
 .login-screen-content .login-screen-title,
 .login-screen-page .login-screen-title,
 .login-screen-content .list,
 .login-screen-page .list,
 .login-screen-content .block,
 .login-screen-page .block {
-  margin: var(--f7-login-screen-blocks-margin-vertical) auto;
+  margin: var(--f7-login-screen-blocks-margin-vertical) 24px;
 }
 .login-screen-content .login-screen-title,
 .login-screen-page .login-screen-title,
@@ -5994,7 +6004,7 @@ html.with-modal-popup-push-closing .framework7-root > .view.dark:after {
 .login-screen > .page .login-screen-content {
   margin-top: auto;
   margin-bottom: auto;
-  height: auto;
+  /* height: auto;  goat*/
   max-height: 100%;
   width: 100%;
 }

@@ -23,10 +23,11 @@
   <link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png">
   <link rel="icon" href="assets/icons/favicon.png">
   
+  <link rel="stylesheet" href="css/app.css">
   
   <link rel="stylesheet" href="framework7/framework7-bundle.css">
   <link rel="stylesheet" href="css/icons.css">
-  <link rel="stylesheet" href="css/app.css">
+  
 </head>
 <body>
   <div id="app">
@@ -207,8 +208,34 @@
       <div class="view">
         <div class="page">
           <div class="page-content login-screen-content">
-            <div class="login-screen-title">Login</div>
-            <div class="list">
+            <div class="login-container">
+              <div class="login-screen-title">Login
+              </div>
+              <div class="loader">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+              </div>
+            </div>
+
+            <div class="login-box">
+              <form>
+                <div class="user-box">
+                  <input type="text" name="" required="">
+                  <label>Username</label>
+                </div>
+                <div class="user-box">
+                  <input type="password" name="" required="">
+                  <label>Password</label>
+                </div><center>
+                <a href="#" class="item-link list-button login-button">
+                       LOGIN
+                   <span></span>
+                </a></center>
+              </form>
+            </div>
+
+            <!-- <div class="list">
               <ul>
                 <li class="item-content item-input">
                   <div class="item-inner">
@@ -238,8 +265,47 @@
                 </li>
               </ul>
               <div class="block-footer">Some text about login information.<br/>Click "Sign In" to close Login Screen</div>
+            </div> -->
+          </div>
+
+          <div class="planet-roll">
+            <div class="loader2">
+              <div class="container">
+                <div class="carousel">
+                  <div class="love"></div>
+                  <div class="love"></div>
+                  <div class="love"></div>
+                  <div class="love"></div>
+                  <div class="love"></div>
+                  <div class="love"></div>
+                  <div class="love"></div>
+                </div> 
+              </div>
+              <div class="container">
+                <div class="carousel">
+                  <div class="death"></div>
+                  <div class="death"></div>
+                  <div class="death"></div>
+                  <div class="death"></div>
+                  <div class="death"></div>
+                  <div class="death"></div>
+                  <div class="death"></div>
+                </div> 
+              </div>
+              <div class="container">
+                <div class="carousel">
+                    <div class="robots"></div>
+                    <div class="robots"></div>
+                    <div class="robots"></div>
+                    <div class="robots"></div>
+                    <div class="robots"></div>
+                    <div class="robots"></div>
+                    <div class="robots"></div>
+                </div> 
+              </div>
             </div>
           </div>
+
         </div>
       </div>
     </div>
