@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
   <meta charset="utf-8">
   <!--
@@ -11,17 +11,21 @@
       * Enable inline JS: add 'unsafe-inline' to default-src
   -->
   <meta http-equiv="Content-Security-Policy" content="default-src * 'self' 'unsafe-inline' 'unsafe-eval' data: content:">
-  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, viewport-fit=cover">
 
   <meta name="theme-color" content="#fff">
   <meta name="format-detection" content="telephone=no">
   <meta name="msapplication-tap-highlight" content="no">
-  <title>Navinducosmo</title>
+  <title>My Cosmo Trips</title>
   
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png">
   <link rel="icon" href="assets/icons/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  
+  <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
   
   
   <link rel="stylesheet" href="framework7/framework7-bundle.min.css">
@@ -46,22 +50,7 @@
         </div>
       </div>
     </div>
-    <!-- Right panel with reveal effect-->
-    <div class="panel panel-right panel-reveal dark">
-      <div class="view">
-        <div class="page">
-          <div class="navbar">
-            <div class="navbar-bg"></div>
-            <div class="navbar-inner">
-              <div class="title">Right Panel</div>
-            </div>
-          </div>
-          <div class="page-content">
-            <div class="block">Right panel content goes here</div>
-          </div>
-        </div>
-      </div>
-    </div>
+
     
     <!-- Views/Tabs container -->
     <div class="views tabs safe-areas">
@@ -99,7 +88,7 @@
                   <i class="icon material-icons if-md">menu</i>
                 </a>
               </div>
-              <div class="title sliding">Navinducosmo</div>
+              <div class="title sliding">My Cosmo Trips</div>
               <div class="right">
                 <a href="#" class="link icon-only panel-open" data-panel="right">
                   <i class="icon f7-icons if-not-md">menu</i>
@@ -107,7 +96,7 @@
                 </a>
               </div>
               <div class="title-large">
-                <div class="title-large-text">Navinducosmo</div>
+                <div class="title-large-text">My Cosmo Trips</div>
               </div>
             </div>
           </div>
@@ -119,7 +108,7 @@
 
               <p>Each tab/view may have different layout, different navbar type (dynamic, fixed or static) or without navbar like this tab.</p>
             </div>
-            <div class="block-title">Navigation</div>
+            <!-- <div class="block-title">Navigation</div>
             <div class="list list-strong inset list-dividers-ios">
               <ul>
                 <li>
@@ -137,21 +126,19 @@
                   </a>
                 </li>
               </ul>
-            </div>
+            </div> -->
 
             <div class="block-title">Modals</div>
             <div class="block grid grid-cols-2 grid-gap">
-              <a href="#" class="button button-fill popup-open" data-popup="#my-popup">Popup</a>
-              <a href="#" class="button button-fill login-screen-open" data-login-screen="#my-login-screen">Login Screen</a>
+              <a href="#" class="button button-fill popup-open" class="bookedticket" data-popup="#my-popup">Popup</a>
             </div>
 
             <div class="block-title">Panels</div>
             <div class="block grid grid-cols-2 grid-gap">
               <a href="#" class="button button-fill panel-open" data-panel="left">Left Panel</a>
-              <a href="#" class="button button-fill panel-open" data-panel="right">Right Panel</a>
             </div>
 
-            <div class="list list-strong inset list-dividers-ios links-list">
+            <!-- <div class="list list-strong inset list-dividers-ios links-list">
               <ul>
                 <li>
                   <a href="/dynamic-route/blog/45/post/125/?foo=bar#about">Dynamic (Component) Route</a>
@@ -163,7 +150,7 @@
                   <a href="/request-and-load/user/123456/">Request Data & Load</a>
                 </li>
               </ul>
-            </div>
+            </div> -->
           </div>
         </div>
       </div>

@@ -1,1 +1,5 @@
 /* Your app custom styles here */
+.title-large-text{
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+}
