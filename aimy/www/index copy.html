@@ -115,10 +115,35 @@
 
           <!-- Scrollable page content-->
           <div class="page-content">
+            <div class="block">
+              <p>This is an example of tabs-layout application. The main point of such tabbed layout is that each tab contains independent view with its own routing and navigation.</p>
+
+              <p>Each tab/view may have different layout, different navbar type (dynamic, fixed or static) or without navbar like this tab.</p>
+            </div>
+            <div class="block-title">Navigation</div>
+            <div class="list list-strong inset list-dividers-ios">
+              <ul>
+                <li>
+                  <a href="/about/" class="item-content item-link">
+                    <div class="item-inner">
+                      <div class="item-title">About</div>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="/form/" class="item-content item-link">
+                    <div class="item-inner">
+                      <div class="item-title">Form</div>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+
             <div class="block-title">Modals</div>
             <div class="block grid grid-cols-2 grid-gap">
-              <a href="#" class="button button-fill login-screen-open" data-login-screen="#my-signup-screen">Sign Up</a>
-              <a href="#" class="button button-fill login-screen-open" data-login-screen="#my-login-screen">Login</a>
+              <a href="#" class="button button-fill popup-open" data-popup="#my-popup">Popup</a>
+              <a href="#" class="button button-fill login-screen-open" data-login-screen="#my-login-screen">Login Screen</a>
             </div>
 
             <div class="block-title">Panels</div>
@@ -127,6 +152,19 @@
               <a href="#" class="button button-fill panel-open" data-panel="right">Right Panel</a>
             </div>
 
+            <div class="list list-strong inset list-dividers-ios links-list">
+              <ul>
+                <li>
+                  <a href="/dynamic-route/blog/45/post/125/?foo=bar#about">Dynamic (Component) Route</a>
+                </li>
+                <li>
+                  <a href="/load-something-that-doesnt-exist/">Default Route (404)</a>
+                </li>
+                <li>
+                  <a href="/request-and-load/user/123456/">Request Data & Load</a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
@@ -142,50 +180,24 @@
       </div>
     </div>
 
-    Signup Screen
-    <div class="login-screen" id="my-signup-screen">
+
+    <!-- Popup -->
+    <div class="popup" id="my-popup">
       <div class="view">
         <div class="page">
-          <div class="page-content login-screen-content">
-            
-            <div class="login-container">
-              <div class="login-screen-title">Create Account</div>
-              <div class="loader">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
+          <div class="navbar">
+            <div class="navbar-bg"></div>
+            <div class="navbar-inner">
+              <div class="title">Popup</div>
+              <div class="right">
+                <a href="#" class="link popup-close">Close</a>
               </div>
             </div>
-
-            <div class="login-box">
-              <form>
-                <div class="user-box">
-                  <input type="text" name="" required="">
-                  <label>Full Name</label>
-                </div>
-                <div class="user-box">
-                  <input type="text" name="" required="">
-                  <label>Email</label>
-                </div>
-                <div class="user-box">
-                  <input type="password" name="" required="">
-                  <label>Password</label>
-                </div>
-                <div class="checkbox-container">
-                  <label class="cyberpunk-checkbox-label">
-                    <input type="checkbox" class="cyberpunk-checkbox" name="agree_terms" required>
-                    I agree to the Terms & Conditions and Privacy Policy
-                  </label>
-                </div>
-                
-                <center>
-                  <a href="#" class="item-link list-button login-button">
-                          Sign Up
-                      <span></span>
-                  </a></center>
-              </form>
+          </div>
+          <div class="page-content">
+            <div class="block">
+              <p>Popup content goes here.</p>
             </div>
-
           </div>
         </div>
       </div>
@@ -196,7 +208,6 @@
       <div class="view">
         <div class="page">
           <div class="page-content login-screen-content">
-
             <div class="login-container">
               <div class="login-screen-title">Login
               </div>
@@ -224,12 +235,42 @@
               </form>
             </div>
 
+            <!-- <div class="list">
+              <ul>
+                <li class="item-content item-input">
+                  <div class="item-inner">
+                    <div class="item-title item-label">Username</div>
+                    <div class="item-input-wrap">
+                      
+                      <input type="text" name="username" placeholder="Your username"/>
+                    </div>
+                  </div>
+                </li>
+                <li class="item-content item-input">
+                  <div class="item-inner">
+                    <div class="item-title item-label">Password</div>
+                    <div class="item-input-wrap">
+                      
+                      <input type="password" name="password" placeholder="Your password"/>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="list">
+              <ul>
+                <li>
+                  
+                  <a href="#" class="item-link list-button login-button">Sign In</a>
+                </li>
+              </ul>
+              <div class="block-footer">Some text about login information.<br/>Click "Sign In" to close Login Screen</div>
+            </div> -->
           </div>
+
         </div>
       </div>
     </div>
-
-
   </div>
   
   <!-- Framework7 library -->
