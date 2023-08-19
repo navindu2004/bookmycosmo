@@ -32,18 +32,19 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 500px;
+    width: 100%;
+    max-width: 500px;
     padding: 40px;
     transform: translate(-50%, -50%);
     background: var(--main-theme-bg-font-color);
     box-sizing: border-box;
-  }
-  
-  .login-box .user-box {
-    position: relative;
-  }
-  
-  .login-box .user-box input {
+}
+
+.login-box .user-box {
+    position: relative; 
+}
+
+.login-box .user-box input {
     width: 100%;
     padding: 10px 0;
     font-size: 16px;
@@ -53,9 +54,9 @@
     border-bottom: 1px solid var(--main-theme-font-color);
     outline: none;
     background: transparent;
-  }
-  
-  .login-box .user-box label {
+}
+
+.login-box .user-box label {
     position: absolute;
     top: 0;
     left: 0;
@@ -64,17 +65,17 @@
     color: var(--main-theme-font-color);
     pointer-events: none;
     transition: .5s;
-  }
-  
-  .login-box .user-box input:focus ~ label,
-  .login-box .user-box input:valid ~ label {
+}
+
+.login-box .user-box input:focus ~ label,
+.login-box .user-box input:valid ~ label {
     top: -20px;
     left: 0;
     color: #7c66db;
     font-size: 12px;
-  }
-  
-  .login-box form a {
+}
+
+.login-box form a {
     position: relative;
     display: inline-block;
     padding: 0 20px;
@@ -86,9 +87,9 @@
     transition: .5s;
     margin-top: 40px;
     letter-spacing: 4px
-  }
-  
-  .login-box a:hover {
+}
+
+.login-box a:hover {
     background: var(--main-theme-font-color);
     color: #fff;
     border-radius: 5px;
@@ -96,35 +97,35 @@
                 0 0 25px var(--main-theme-font-color),
                 0 0 50px var(--main-theme-font-color),
                 0 0 100px var(--main-theme-font-color);
-  }
-  
-  .login-box a span {
+}
+
+.login-box a span {
     position: absolute;
     display: block;
-  }
+}
 
-  .login-button{
+.login-button{
     width: 100px;
-  }
-  
-  @keyframes btn-anim1 {
+}
+
+@keyframes btn-anim1 {
     0% {
-      left: -100%;
+        left: -100%;
     }
-  
+
     50%,100% {
-      left: 100%;
+        left: 100%;
     }
-  }
+}
   
-  .login-box a span:nth-child(1) {
+.login-box a span:nth-child(1) {
     bottom: 2px;
     left: -100%;
     width: 100%;
     height: 2px;
     background: linear-gradient(90deg, transparent, var(--main-theme-font-color));
     animation: btn-anim1 1.5s linear infinite;
-  }
+}
 
 
 /********************************************/
@@ -169,3 +170,47 @@
     }
   }
 /********************************************/
+
+/****************agree terms checkbox****************/
+.cyberpunk-checkbox {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    aspect-ratio: 1/1;
+    border: 2px solid var(--main-theme-bg-color);
+    border-radius: 5px;
+    background-color: transparent;
+    display: inline-block;
+    position: relative;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+  
+  .cyberpunk-checkbox:before {
+    content: "";
+    background-color: var(--main-theme-font-color);
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    width: 10px;
+    height: 10px;
+    border-radius: 3px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .cyberpunk-checkbox:checked:before {
+    transform: translate(-50%, -50%) scale(1);
+  }
+  
+  .cyberpunk-checkbox-label {
+    font-size: 12px;
+    color: #bebebe;
+    cursor: pointer;
+    -webkit-user-select: none;
+    user-select: none;
+    display: flex;
+    align-items: center;
+  }
+  /****************agree terms checkbox****************/
