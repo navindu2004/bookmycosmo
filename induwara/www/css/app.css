@@ -4,3 +4,13 @@
     color: rgb(1, 35, 105);
     font-weight: bolder;
 }
+
+button button-fill{
+    background-color: rgb(2, 215, 30);
+    color: white;
+    font-weight: bolder;
+}
+
+.grid-cols-2{
+    grid-template-columns: repeat(3,minmax(0,1fr));
+}
