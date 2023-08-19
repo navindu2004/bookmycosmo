@@ -1,17 +1,17 @@
 {
-  "cwd": "C:\\Users\\itzluminara\\Desktop\\bookmycosmo_TheBackbenchers_2.0\\aimy\\aimy-seven-first",
+  "cwd": "C:\\Users\\itzluminara\\Desktop\\bookmycosmo_TheBackbenchers_2.0\\aimy",
   "type": [
     "web"
   ],
-  "name": "Test_2",
+  "name": "aimycosmo",
   "framework": "core",
   "template": "tabs",
   "bundler": false,
   "theming": {
     "customColor": true,
-    "color": "#4A148C",
+    "color": "#5D41DE",
     "darkMode": false,
-    "iconFonts": false
+    "iconFonts": true
   },
   "customBuild": false
 }

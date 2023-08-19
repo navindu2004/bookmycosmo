@@ -2,10 +2,10 @@ var $ = Dom7;
 
 
 var app = new Framework7({
-  name: 'Test_2', // App name
+  name: 'aimycosmo', // App name
   theme: 'auto', // Automatic theme detection
   colors: {
-    primary: '#4A148C',
+    primary: '#5D41DE',
   },
 
   el: '#app', // App root element
