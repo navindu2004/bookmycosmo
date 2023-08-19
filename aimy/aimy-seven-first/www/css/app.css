@@ -1,3 +1,6 @@
+body{
+  background-color: #5D41DE;
+}
 .button-aimy {
     display: flex;
     justify-content: center;
