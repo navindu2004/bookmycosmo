@@ -1,0 +1,56 @@
+* {
+    font-family: 'Poppins', sans-serif;
+
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    margin: 0;
+
+    /* box-sizing: border-box; */
+}
+
+html,
+body{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    scroll-padding-top: 51px;
+}
+
+html::-webkit-scrollbar{
+    top: 20px;
+    width: 11px;
+}
+
+html::-webkit-scrollbar-thumb {
+    background-color: #2e3131;
+    border-radius: 20px;
+    border: 3px solid #fff;
+    background-clip: content-box;
+}
+
+html::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+body{
+    /* background-image: url('images/qwert.webp'); */
+    background-color: black;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+hr {
+    height: 2.5px;
+    background-color: var(--persian-green);
+    border: none;
+    border-radius: 100px;
+    margin: 20px auto;
+    width: 250px;
+    position: relative;
+}
+
