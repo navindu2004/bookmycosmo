@@ -1,0 +1,171 @@
+:root {
+    --black-main: #000000;
+    --white-main: #FFFFFF;
+    --purple-main: #2b0040;
+    --blue-main: #000022;
+    --green-main: #45C68B;
+    --transparent: #00000000;
+    --gradient-main: linear-gradient(to top, var(--blue-main), var(--purple-main));
+}
+
+* {
+    font-family: 'Maven Pro', sans-serif;
+}
+
+body {
+    background-color: var(--black-main);
+    color: var(--white-main);
+}
+
+.material-icons {
+    padding: 0.5em;
+    border-radius: 1em;
+    background-color: var(--white-main);
+    color: var(--black-main);
+    font-size: 1.5em;
+    cursor: default;
+}
+
+/*! top bar styles */
+
+.top-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1em 0.3em;
+}
+
+.top-bar div {
+    margin: 0 1em;
+}
+
+#back-button, #notif-button {
+    cursor: pointer;
+}
+
+#back-button {
+    background-color: var(--white-main);
+}
+
+#location-title {
+    color: var(--white-main);
+    font-size: 1.3em;
+    text-align: center;
+}
+
+#notif-button {
+    background-color: var(--transparent);
+    color: var(--white-main);
+}
+
+/*! location styles */
+
+.location-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*! location pic styles */
+
+.location-pic-container {
+    display: flex;
+    justify-content: center;
+}
+
+#location-pic {
+    width: 80%;
+    border-radius: 5%;
+    border: 1px dashed var(--white-main);
+    opacity: 0.7;
+}
+
+/*! location info styles */
+
+.location-info-container, .location-main-info-container,
+.weather-container {
+    display: flex;
+    width: 100%;
+}
+
+.location-info-container {
+    flex-direction: column;
+    align-items: center;
+}
+
+/*! weather styles */
+
+.weather-container {
+    justify-content: space-between;
+    margin: 1.5em 0;
+    padding: 1.5em 3em;
+    background: var(--gradient-main);
+    color: var(--white-main);
+}
+
+.weather-text-container, .weather-icon-container {
+    display: flex;
+    align-items: center;
+}
+
+.weather-text-container {
+    flex-direction: column;
+}
+
+#weather-title {
+    margin-bottom: 0.3em;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+/*! location text styles */
+
+.location-text-container, .location-details-container,
+.planet-info-container, .location-description-container,
+.location-fun-fact-container {
+    display: flex;
+}
+
+.location-text-container {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    color: var(--white-main);
+}
+
+#sunny-icon {
+    background-color: var(--transparent);
+    color: var(--white-main);
+}
+
+.location-details-container {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.planet-info-container {
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 1em;
+}
+
+#planet-name {
+    font-weight: bold;
+}
+
+.location-description-container {
+    justify-content: center;
+    padding: 2em;
+}
+
+#location-description, #location-fun-fact {
+    font-size: 0.9em;
+    text-align: center;
+}
+
+.location-fun-fact-container {
+    padding: 2em;
+    background: var(--gradient-main);
+}
