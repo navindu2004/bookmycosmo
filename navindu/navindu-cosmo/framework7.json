@@ -1,0 +1,17 @@
+{
+  "cwd": "C:\\Users\\ASUS\\Downloads\\RootCode Hackathon - The BackBenchers 2.0\\bookmycosmo_TheBackbenchers_2.0\\navindu\\navindu-cosmo",
+  "type": [
+    "web"
+  ],
+  "name": "Navinducosmo",
+  "framework": "core",
+  "template": "tabs",
+  "bundler": false,
+  "theming": {
+    "customColor": true,
+    "color": "#5D41DE",
+    "darkMode": false,
+    "iconFonts": true
+  },
+  "customBuild": false
+}
