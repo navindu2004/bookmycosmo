@@ -5871,7 +5871,7 @@ html.with-modal-popup-push-closing .framework7-root > .view.dark:after {
   --f7-login-screen-transition-duration: 400ms;
   --f7-login-screen-title-font-weight: 600;
   --f7-login-screen-title-font-size: 28px;
-  --f7-login-screen-content-bg-color: #fff;
+  --f7-login-screen-content-bg-color: #5e41de4d;
   --f7-login-screen-bg-color: #fff;
 }
 .ios .dark,
