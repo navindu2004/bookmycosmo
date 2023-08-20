@@ -76,8 +76,8 @@ temperature.innerHTML = selectedPlace.temperature;
 planetName.textContent = "Mars";
 locationDescription.textContent = selectedPlace.description;
 locationFunFact.textContent = selectedPlace.funFact;
-locationPic.setAttribute("src", destinationId + ".svg");
+locationPic.setAttribute("src", "./assets-src/" + destinationId + ".svg");
 
 backButton.addEventListener("click", () =>{
-    window.location.replace("/bookmycosmo_TheBackbenchers_2.0/rashmika/cosmic-hotspots.html");
+    window.location.replace("./cosmic-hotspots.html");
 });
