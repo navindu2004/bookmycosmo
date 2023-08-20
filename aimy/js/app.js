@@ -15,27 +15,23 @@ var app = new Framework7({
   // App routes
   routes: routes,
 });
+
 // Login Screen Demo
 $('#my-login-screen .login-button').on('click', function () {
   var username = $('#my-login-screen [name="username"]').val();
   var password = $('#my-login-screen [name="password"]').val();
 
-  // Close login screen
-  app.loginScreen.close('#my-login-screen');
-
-  // Alert username and password
-  app.dialog.alert('Username: ' + username + '<br/>Password: ' + password);
+  // Navigate to cosmic-hotspot.html
+  window.location.href = 'cosmic-hotspots.html';
 });
 
 // Signup Screen Demo
 $('#my-signup-screen .login-button').on('click', function () {
-  var username = $('#my-login-screen [name="username"]').val();
-  var password = $('#my-login-screen [name="password"]').val();
+  var username = $('#my-signup-screen [name="username"]').val();
+  var password = $('#my-signup-screen [name="password"]').val();
 
-  // Close login screen
-  app.loginScreen.close('#my-signup-screen');
-
-  // Alert username and password
-  app.dialog.alert('Username: ' + username + '<br/>Password: ' + password);
+  // Navigate to cosmic-hotspot.html
+  window.location.href = 'cosmic-hotspots.html';
 });
+
 

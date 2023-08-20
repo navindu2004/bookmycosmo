@@ -222,3 +222,43 @@ img {
     padding: 2em;
     background: var(--gradient-main);
 }
+
+
+/*! book now button  */
+
+.floating-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: var(--blue-main); 
+    color: var(--transparent);
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    cursor: pointer;
+    transition: background-color 1s ease-in;
+}
+  
+.floating-button:hover {
+  scale: 1.061;
+  background-color: var(--purple-main);
+  transition: background-color 1s ease-in;
+}
+  
+  
+.floating-button a {
+    text-decoration: none;
+    background-color: var(--transparent);
+    color: var(--white-main);
+    text-align: center;
+}
+
+.material-icons {
+    padding: 0.5em;
+    border-radius: 1em;
+    background-color: var(--white-main);
+    color: var(--black-main);
+    font-size: 1.5em;
+    cursor: default;
+}

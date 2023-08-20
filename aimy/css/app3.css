@@ -70,6 +70,7 @@
     box-shadow: transparent;
     border: 1px solid #00008B;
     transition: 0.5s ease;
+    -webkit-user-select: none;;
     user-select: none;
   }
   
