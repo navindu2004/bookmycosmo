@@ -51,6 +51,9 @@
       </div>
     </div>
 
+
+    
+
     
     <!-- Views/Tabs container -->
     <div class="views tabs safe-areas">
@@ -92,7 +95,6 @@
               <div class="right">
                 <a href="#" class="link icon-only panel-open" data-panel="right">
                   <i class="icon f7-icons if-not-md">menu</i>
-                  <i class="icon material-icons if-md">menu</i>
                 </a>
               </div>
               <div class="title-large">
@@ -103,54 +105,19 @@
 
           <!-- Scrollable page content-->
           <div class="page-content">
-            <div class="block">
-              <p>This is an example of tabs-layout application. The main point of such tabbed layout is that each tab contains independent view with its own routing and navigation.</p>
 
-              <p>Each tab/view may have different layout, different navbar type (dynamic, fixed or static) or without navbar like this tab.</p>
-            </div>
-            <!-- <div class="block-title">Navigation</div>
-            <div class="list list-strong inset list-dividers-ios">
-              <ul>
-                <li>
-                  <a href="/about/" class="item-content item-link">
-                    <div class="item-inner">
-                      <div class="item-title">About</div>
-                    </div>
-                  </a>
-                </li>
-                <li>
-                  <a href="/form/" class="item-content item-link">
-                    <div class="item-inner">
-                      <div class="item-title">Form</div>
-                    </div>
-                  </a>
-                </li>
-              </ul>
-            </div> -->
 
-            <div class="block-title">Modals</div>
-            <div class="block grid grid-cols-2 grid-gap">
-              <a href="#" class="button button-fill popup-open" class="bookedticket" data-popup="#my-popup">Popup</a>
+            <div class="block grid grid-cols-2 grid-gap" class="bookedticket">
+              <div class="centered-popup">
+              <a href="#" class="button button-fill popup-open"  data-popup="#my-popup">View Ticket</a>
+              </div>
             </div>
 
-            <div class="block-title">Panels</div>
             <div class="block grid grid-cols-2 grid-gap">
               <a href="#" class="button button-fill panel-open" data-panel="left">Left Panel</a>
             </div>
 
-            <!-- <div class="list list-strong inset list-dividers-ios links-list">
-              <ul>
-                <li>
-                  <a href="/dynamic-route/blog/45/post/125/?foo=bar#about">Dynamic (Component) Route</a>
-                </li>
-                <li>
-                  <a href="/load-something-that-doesnt-exist/">Default Route (404)</a>
-                </li>
-                <li>
-                  <a href="/request-and-load/user/123456/">Request Data & Load</a>
-                </li>
-              </ul>
-            </div> -->
+
           </div>
         </div>
       </div>
@@ -174,7 +141,7 @@
           <div class="navbar">
             <div class="navbar-bg"></div>
             <div class="navbar-inner">
-              <div class="title">Popup</div>
+              <div class="title">View Ticket</div>
               <div class="right">
                 <a href="#" class="link popup-close">Close</a>
               </div>
