@@ -1,0 +1,316 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('/bookmycosmo_TheBackbenchers_2.0/aimy/assets-src/32.jpg');
+    background-color: black;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+.page-content{
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-image: url('/bookmycosmo_TheBackbenchers_2.0/aimy/assets-src/32.jpg');
+  background-color: black;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.new-2{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.spinner {
+    width: 70.4px;
+    height: 70.4px;
+    --clr: rgb(255, 255, 255);
+    --clr-alpha: rgba(255, 255, 255, 0.1);
+    animation: spinner 10s infinite ease;
+    transform-style: preserve-3d;
+  }
+  
+  .spinner > div {
+    background-color: var(--clr-alpha);
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    border: 3.5px dotted var(--clr);
+    box-shadow: 0px 1000px 0px 0px rgb(255, 255, 255);
+  }
+  
+  .spinner div:nth-of-type(1) {
+    transform: translateZ(-35.2px) rotateY(180deg);
+  }
+  
+  .spinner div:nth-of-type(2) {
+    transform: rotateY(-270deg) translateX(50%);
+    transform-origin: top right;
+  }
+  
+  .spinner div:nth-of-type(3) {
+    transform: rotateY(270deg) translateX(-50%);
+    transform-origin: center left;
+  }
+  
+  .spinner div:nth-of-type(4) {
+    transform: rotateX(90deg) translateY(-50%);
+    transform-origin: top center;
+  }
+  
+  .spinner div:nth-of-type(5) {
+    transform: rotateX(-90deg) translateY(50%);
+    transform-origin: bottom center;
+  }
+  
+  .spinner div:nth-of-type(6) {
+    transform: translateZ(35.2px);
+  }
+  
+  @keyframes spinner {
+    0% {
+      transform: rotate(45deg) rotateX(-25deg) rotateY(25deg);
+    }
+  
+    50% {
+      transform: rotate(45deg) rotateX(-385deg) rotateY(25deg);
+    }
+  
+    100% {
+      transform: rotate(45deg) rotateX(-385deg) rotateY(385deg);
+    }
+  }
+
+.image-data{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 100px;
+    max-width: 60%;
+}
+
+.image-data h2{
+    font-size: 30px;
+}  
+
+/* === removing default button style ===*/
+.button {
+    margin: 0;
+    height: auto;
+    background: transparent;
+    padding: 0;
+    border: none;
+  }
+  
+/* button styling */
+.button {
+    --border-right: 6px;
+    --text-stroke-color: rgba(255,255,255,0.6);
+    --animation-color: rgb(255, 255, 255);
+    --fs-size: 2em;
+    letter-spacing: 3px;
+    text-decoration: none;
+    font-size: var(--fs-size);
+    font-family: "Arial";
+    position: relative;
+    text-transform: uppercase;
+    color: transparent;
+    -webkit-text-stroke: 1px var(--text-stroke-color);
+}
+
+/* this is the text */
+.hover-text {
+    position: absolute;
+    box-sizing: border-box;
+    content: attr(data-text);
+    color: var(--animation-color);
+    width: 0%;
+    inset: 0;
+    border-right: var(--border-right) solid var(--animation-color);
+    overflow: hidden;
+    transition: 0.5s;
+    -webkit-text-stroke: 1px var(--animation-color);
+}
+
+/* infinite animation every 2 seconds */
+@keyframes slideAnimation {
+    0% {
+        width: 0;
+    }
+    50% {
+        width: 100%;
+    }
+    100% {
+        width: 0;
+    }
+}
+
+/* glow effect */
+@keyframes glowAnimation {
+    0%, 100% {
+        box-shadow: 0 0 10px 3px var(--animation-color);
+    }
+    50% {
+        box-shadow: 0 0 100px 6px var(--animation-color);
+    }
+}
+
+.button .hover-text {
+    animation: slideAnimation 3s infinite;
+    filter: drop-shadow(0 0 23px var(--animation-color));
+}
+
+
+
+
+
+
+.button2 {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    border: none;
+    background: none;
+    color: #1d1d1d;
+    cursor: pointer;
+    position: relative;
+    padding: 8px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 14px;
+    transition: all .15s ease;
+    text-decoration: none;
+  }
+  
+  .button2::before,
+  .button2::after {
+    content: '';
+    display: block;
+    position: absolute;
+    right: 0;
+    left: 0;
+    height: calc(50% - 5px);
+    border: 1px solid #7D8082;
+    transition: all .15s ease;
+  }
+  
+  .button2::before {
+    top: 0;
+    border-bottom-width: 0;
+  }
+  
+  .button2::after {
+    bottom: 0;
+    border-top-width: 0;
+  }
+  
+  .button2:active,
+  .button2:focus {
+    outline: none;
+  }
+  
+  .button2:active::before,
+  .button2:active::after {
+    right: 3px;
+    left: 3px;
+  }
+  
+  .button2:active::before {
+    top: 3px;
+  }
+  
+  .button2:active::after {
+    bottom: 3px;
+  }
+  
+  .button2_lg {
+    position: relative;
+    display: block;
+    padding: 10px 20px;
+    color: #fff;
+    background-color: #1d1d1d;
+    overflow: hidden;
+    box-shadow: inset 0px 0px 0px 1px transparent;
+  }
+  
+  .button2_lg::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 2px;
+    height: 2px;
+    background-color: #1d1d1d;
+  }
+  
+  .button2_lg::after {
+    content: '';
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 4px;
+    height: 4px;
+    background-color: #1d1d1d;
+    transition: all .2s ease;
+  }
+  
+  .button2_sl {
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: -1px;
+    left: -8px;
+    width: 0;
+    background-color: #888888;
+    transform: skew(-15deg);
+    transition: all .2s ease;
+  }
+  
+  .button2_text {
+    position: relative;
+  }
+  
+  .button2:hover {
+    color: #1d1d1d;
+  }
+  
+  .button2:hover .button2_sl {
+    width: calc(100% + 15px);
+  }
+  
+  .button2:hover .button_lg::after {
+    background-color: #fff;
+  }
+  
+
+
+
+  .button2_text_center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .login-screen-title{
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #fff;
+    text-align: center;
+  }
