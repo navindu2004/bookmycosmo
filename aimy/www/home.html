@@ -27,6 +27,7 @@
   
   <link rel="stylesheet" href="framework7/framework7-bundle.css">
   <link rel="stylesheet" href="css/icons.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
   
 </head>
 <body>
@@ -70,77 +71,27 @@
       <div class="toolbar toolbar-bottom tabbar-icons">
         <div class="toolbar-inner">
           <a href="#view-home" class="tab-link tab-link-active">
-            <i class="icon f7-icons if-not-md">house_fill</i>
-            <i class="icon material-icons if-md">home</i>
+            <span class="material-symbols-outlined">
+              login
+              </span>
             <span class="tabbar-label">Home</span>
-          </a>
-          <a href="#view-catalog" class="tab-link">
-            <i class="icon f7-icons if-not-md">square_list_fill</i>
-            <i class="icon material-icons if-md">view_list</i>
-            <span class="tabbar-label">Catalog</span>
-          </a>
-          <a href="#view-settings" class="tab-link">
-            <i class="icon f7-icons if-not-md">gear</i>
-            <i class="icon material-icons if-md">settings</i>
-            <span class="tabbar-label">Settings</span>
           </a>
         </div>
       </div>
 
       <!-- Your main view/tab, should have "view-main" class. It also has "tab-active" class -->
       <div id="view-home" class="view view-main view-init tab tab-active">
-        <div class="page" data-name="home">
-          <!-- Top Navbar -->
-          <div class="navbar navbar-large">
-            <div class="navbar-bg"></div>
-            <div class="navbar-inner">
-              <div class="left">
-                <a href="#" class="link icon-only panel-open" data-panel="left">
-                  <i class="icon f7-icons if-not-md">menu</i>
-                  <i class="icon material-icons if-md">menu</i>
-                </a>
-              </div>
-              <div class="title sliding">aimycosmo</div>
-              <div class="right">
-                <a href="#" class="link icon-only panel-open" data-panel="right">
-                  <i class="icon f7-icons if-not-md">menu</i>
-                  <i class="icon material-icons if-md">menu</i>
-                </a>
-              </div>
-              <div class="title-large">
-                <div class="title-large-text">aimycosmo</div>
-              </div>
-            </div>
-          </div>
-
+        <div class="page" data-name="home"></div>
+        
           <!-- Scrollable page content-->
           <div class="page-content">
-            <div class="block-title">Modals</div>
             <div class="block grid grid-cols-2 grid-gap">
               <a href="#" class="button button-fill login-screen-open" data-login-screen="#my-signup-screen">Sign Up</a>
               <a href="#" class="button button-fill login-screen-open" data-login-screen="#my-login-screen">Login</a>
             </div>
-
-            <div class="block-title">Panels</div>
-            <div class="block grid grid-cols-2 grid-gap">
-              <a href="#" class="button button-fill panel-open" data-panel="left">Left Panel</a>
-              <a href="#" class="button button-fill panel-open" data-panel="right">Right Panel</a>
-            </div>
-
           </div>
         </div>
       </div>
-
-      <!-- Catalog View -->
-      <div id="view-catalog" class="view view-init tab" data-name="catalog" data-url="/catalog/">
-        <!-- Catalog page will be loaded here dynamically from /catalog/ route -->
-      </div>
-
-      <!-- Settings View -->
-      <div id="view-settings" class="view view-init tab" data-name="settings" data-url="/settings/">
-        <!-- Settings page will be loaded here dynamically from /settings/ route -->
-      </div>
-    </div>
 
     <!-- Signup Screen -->
     <div class="login-screen" id="my-signup-screen">
