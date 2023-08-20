@@ -2,11 +2,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-<<<<<<< HEAD
-    background-image: url('/bookmycosmo_TheBackbenchers_2.0/aimy/assets-src/32.jpg');
-=======
-    background-image: url('/aimy/assets-src/322.jpg');
->>>>>>> df9b45275903552b9334a99f5dd97ae7bfcc902b
+    background-image: url('../assets-src/322.jpg');
     background-color: black;
     background-size: cover;
     background-position: center;
@@ -20,11 +16,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: Arial, sans-serif;
-<<<<<<< HEAD
-  background-image: url('/bookmycosmo_TheBackbenchers_2.0/aimy/assets-src/32.jpg');
-=======
-  background-image: url('/aimy/assets-src/69.jpg');
->>>>>>> df9b45275903552b9334a99f5dd97ae7bfcc902b
+  background-image: url('../assets-src/69.jpg');
   background-color: black;
   background-size: cover;
   background-position: center;
